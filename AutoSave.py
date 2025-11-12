@@ -5,8 +5,8 @@ import csv
 import os
 from datetime import datetime
 
-start_id = 21221773
-end_id = 21223052
+start_id = 140001
+end_id = 150000
 # Generate all URLs from start_id to end_id (inclusive!)
 urls = [f"https://zoma.to/r/{i}" for i in range(start_id, end_id+1)]
 
@@ -30,8 +30,8 @@ def check_url_accurate(url):
     return {"URL": url, "Status": status}
 
 # Setup real-time saving files
-output_csv = "zomato_url_status_fast_Demo1_realtime.csv"
-output_excel = "zomato_url_status_fast_Demo1_realtime.xlsx"
+output_csv = "zomato_url_status_fast_140001-150000.csv"
+output_excel = "zomato_url_status_fast_140001-150000.xlsx"
 
 # Create CSV file with headers immediately
 with open(output_csv, 'w', newline='', encoding='utf-8') as f:
